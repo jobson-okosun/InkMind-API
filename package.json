@@ -6,7 +6,8 @@
   "author": "Job Okosun | Software Engineer",
   "license": "ISC",
   "scripts": {
-    "dev": "set NODE_ENV=development&& nodemon bin/www"
+    "dev": "set NODE_ENV=development&& nodemon bin/www",
+    "start": "set NODE_ENV=production&& node bin/ww"
   },
   "keywords": [
     "inkmind",

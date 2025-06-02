@@ -143,3 +143,40 @@ util
   "reminderAt": "2025-12-31T10:00:00.000Z",
   "dueDate": "2026-01-15"
 }
+
+---
+
+## Prerequisites
+
+- Node.js (v14 or newer)  
+- npm 
+- MongoDB (Local or MongoDB cluster)  
+
+---
+
+###  Installation & Setup
+# Clone repository
+git clone https://github.com/YOUR_USERNAME/inkmind-api.git
+cd inkmind-api
+
+# Install dependencies
+npm install
+
+---
+
+## Environment Variables
+# Server Config
+PORT=3000
+NODE_ENV=development
+
+# MongoDB Connection: For cloud
+CONN_STRING="mongodb+srv://<user>:<pass>@cluster.mongodb.net/inkmindDB?retryWrites=true&w=majority"
+
+#Cors 
+ALLOWED_ORIGINS='http://localhost:4200'
+
+...
+
+## Running the Application
+- Dev Environment (With Nodemon): npm run dev
+- Prod Environment: npm run start
