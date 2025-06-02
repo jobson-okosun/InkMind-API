@@ -151,17 +151,14 @@ util
 - MongoDB (Local or MongoDB cluster)  
 
 ###  Installation & Setup
-git clone https://github.com/YOUR_USERNAME/inkmind-api.git
-cd inkmind-api
+- git clone https://github.com/YOUR_USERNAME/inkmind-api.git
+- cd inkmind-api
 
 ###  Install dependencies
 npm install
 
-### Environment Variables
-PORT=3000
-NODE_ENV=development
-CONN_STRING="mongodb+srv://<user>:<pass>@cluster.mongodb.net/inkmindDB?retryWrites=true&w=majority"
-ALLOWED_ORIGINS='http://localhost:4200'
+### Environment setup
+Replace the mongodb connection credentials on the environment -> development.env file.
 
 ## Running the Application
 - Dev Environment (With Nodemon): npm run dev
