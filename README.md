@@ -64,19 +64,40 @@ It is built to be scalable and maintainable using modern JavaScript technologies
 
 ## 🗂 Project Structure
 
-inkmind-api/
-├── config/ # Database configuration
-├── controllers/ # Request handling logic
-├── models/ # Mongoose schemas
-├── routes/ # API route definitions
-├── services/
-│ └── agenda/ # Agenda.js scheduler setup
-│ ├── handler.js
-│ └── scheduler.js
-├── util/ # Utility functions (e.g. error handler)
-├── .env.example # Example environment config
-├── .gitignore
-├── app.js # Express app setup
-├── package.json
-├── server.js # Application entry point
-└── README.md
+```bash
+.gitignore
+LICENSE
+README.md
+app.js
+bin
+   |-- www
+config.js
+controller
+   |-- healthController.js
+   |-- noteController.js
+cors.config.js
+db
+   |-- connection.js
+environment
+   |-- development.env
+middleware
+   |-- globalErrorHandler.js
+model
+   |-- note
+   |   |-- note.js
+   |   |-- note.schema.js
+package-lock.json
+package.json
+router
+   |-- health.js
+   |-- note.js
+services
+   |-- agenda
+   |   |-- handler.js
+   |   |-- jobs.js
+   |   |-- scheduler.js
+util
+   |-- appError.js
+   |-- constants.js
+   |-- helper.js
+```
