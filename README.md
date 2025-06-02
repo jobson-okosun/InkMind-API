@@ -1,4 +1,4 @@
-# InkMind API 🧠📝
+# InkMind
 
 > A robust and feature-rich backend API for a modern note-taking application.  
 > Built with Node.js, Express, MongoDB, and Agenda.js for scheduled reminders.  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Description](#description)
 - [Key Features](#key-features)
@@ -23,7 +23,7 @@
 
 ---
 
-## 🧠 Description
+## Description
 
 InkMind API serves as the backend engine for a note-taking application that helps users capture, organize, and manage their thoughts, tasks, and ideas.
 
@@ -38,21 +38,21 @@ It is built to be scalable and maintainable using modern JavaScript technologies
 
 ---
 
-## ✅ Key Features
+## Key Features
 
 - **CRUD Operations** – Create, Read, Update, and Delete notes  
-- **📁 Categorization** – Organize notes by category  
-- **🗂 Archiving & Restoration** – Soft-delete and recover notes  
-- **📌 Pinning** – Pin notes for quick access  
-- **⏰ Reminders** – Schedule tasks and due dates  
-- **⚡ Agenda.js Integration** – Background job scheduling  
-- **🔍 Filtering & Sorting** – Flexible query support  
-- **📄 Pagination** – Load notes efficiently  
-- **⚙️ MVC Architecture** – Organized codebase
+- **Categorization** – Organize notes by category  
+- **Archiving & Restoration** – Soft-delete and recover notes  
+- **Pinning** – Pin notes for quick access  
+- **Reminders** – Schedule tasks and due dates  
+- **Agenda.js Integration** – Background job scheduling  
+- **Filtering & Sorting** – Flexible query support  
+- **Pagination** – Load notes efficiently  
+- **MVC Architecture** – Organized codebase
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Backend**: Node.js, Express.js  
 - **Database**: MongoDB, Mongoose  
@@ -62,7 +62,7 @@ It is built to be scalable and maintainable using modern JavaScript technologies
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```bash
 app.js
