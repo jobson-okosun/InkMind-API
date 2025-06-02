@@ -65,9 +65,6 @@ It is built to be scalable and maintainable using modern JavaScript technologies
 ## 🗂 Project Structure
 
 ```bash
-.gitignore
-LICENSE
-README.md
 app.js
 bin
    |-- www
@@ -101,3 +98,48 @@ util
    |-- constants.js
    |-- helper.js
 ```
+
+
+---
+
+### API Endpoints
+
+| Method | Endpoint               | Description                          |
+|--------|----------------------- |--------------------------------------|
+| GET    | `/heath`               | Check for server health and uptime   |
+| POST   | `/api/v1`              | Create a new note                    |
+| GET    | `/api/v1`              | Get all notes (filter/sort/page)     |
+| GET    | `/api/v1/:id`          | Get a specific note by ID            |
+| PUT    | `/api/v1/:id`          | Replace a note                       |
+| PATCH  | `/api/v1/:id`          | Partially update a note              |
+| DELETE | `/api/v1/:id`          | Permanently delete a note            |
+| PATCH  | `/api/v1/:id/archive`  | Archive a note                       |
+| PATCH  | `/api/v1/:id/restore`  | Restore an archived note             |
+| PATCH  | `/api/v1/:id/pin`      | Pin a note                           |
+| PATCH  | `/api/v1/:id/unpin`    | Unpin a note                         |
+
+### GET `/api/v1` Query Parameters
+
+- `archived`: `true` | `false` | `all`
+- `category`: Filter by category name
+- `isPinned`: `true` | `false`
+- `reminderBefore`, `reminderAfter`: ISO Date string
+- `dueBefore`, `dueAfter`: ISO Date string
+- `hasReminder`: `true` | `false`
+- `isOverdue`: `true` | `false`
+- `sort`: `-isPinned,-createdAt`
+- `fields`: e.g. `title,content`
+- `page`: Default is `1`
+- `limit`: Default is `10`
+
+### Example Request Body (`POST /api/v1`)
+
+```json
+{
+  "title": "My Awesome Note",
+  "content": "Detailed content of the note goes here.",
+  "category": "Personal",
+  "isPinned": true,
+  "reminderAt": "2025-12-31T10:00:00.000Z",
+  "dueDate": "2026-01-15"
+}
